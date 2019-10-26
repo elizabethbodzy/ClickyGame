@@ -1,1 +1,2 @@
-// import { default } from "../Navbar";
+// import { default } from "./Navbar";
+export { default } from './Navbar';
