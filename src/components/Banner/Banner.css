@@ -5,7 +5,11 @@
     padding: 0 !important;
     color: rgb(1, 1, 63);
     font-size: 18px;
+    
   }
+
+
+
 
   @media (min-width: 576px) {
     .banner {
