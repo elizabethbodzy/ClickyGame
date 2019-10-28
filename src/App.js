@@ -4,23 +4,8 @@ import Wrapper from './components/Wrapper';
 import Footer from './components/Footer';
 import Banner from './components/Banner';
 import Character from './components/Character';
-// import images from '../src/images';
 import images from './images.json';
-// import logo from './logo.svg';
 import './App.css';
-
-// const App = () => (
-//   <>
-//     <Navbar />
-//     {/* <Container /> */}
-//     <Banner />
-//     <Character  />
-//     <Character />
-//     <Footer />
-   
-   
-//   </>
-// )
 
 class App extends Component {
   state = {
