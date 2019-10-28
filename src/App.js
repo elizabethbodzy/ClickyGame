@@ -46,7 +46,31 @@ class App extends Component {
 
   clickCount = id => {
     var newImagesArray = this.state.images;
-    console.log(newImagesArray);
+    if (!newImagesArray[id].clicked) {
+      newImagesArray[id].clicked = true;
+      this.shuffle(newImagesArray);
+
+      if (this.state.score >= this.state.highScore)
+      return this.setState({ 
+          images: newImagesArray, 
+          score: this.state.score + 1,
+          highScore: this.state.highScore + 1,
+          navMessage: "You guessed correctly!"
+      })
+      return this.setState({ 
+          images: newImagesArray,
+          score: this.state.score + 1,
+          navMessage: "You guessed correctly!"})
+    } else {
+      newImagesArray.map(value => value.clicked = false);
+      this.shuffle(newImagesArray);
+      this.setState({
+          images: newImagesArray,
+          score: 0,
+          navMessage: "You guessed incorrectly :("
+      })
+
+    }
   }
 
   render() {
@@ -70,20 +94,8 @@ class App extends Component {
             onClick = {() => this.clickCount(image.id)}
           />
         ))}
-        
-      
-      
-      
       </Wrapper>
-
       <Footer />
-      
-      
-
-
-
-
-
       </>
     )
   }
