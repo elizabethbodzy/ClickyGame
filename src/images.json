@@ -1,0 +1,65 @@
+[
+    {
+      "id": 1,
+      "name": "Elaine",
+      "image": "../images/elaine.png",
+      "count": 0
+    },
+    {
+      "id": 2,
+      "name": "Ellen",
+      "image": "../images/ellen.png",
+      "count": 0
+    },
+    {
+      "id": 3,
+      "name": "Estelle",
+      "image": "../images/estelle.png",
+      "count": 0
+    },
+    {
+      "id": 4,
+      "name": "Frank",
+      "image": "../images/frank.png",
+      "count": 0
+    },
+    {
+      "id": 5,
+      "name": "George",
+      "image": "../images/george.png",
+      "count": 0
+    },
+    {
+      "id": 6,
+      "name": "Jerry",
+      "image": "../images/jerry.png",
+      "count": 0
+    },
+    {
+      "id": 7,
+      "name": "Kramer",
+      "image": "../images/kramer.png",
+      "count": 0
+    },
+    {
+      "id": 8,
+      "name": "Morty",
+      "image": "../images/morty.png",
+      "count": 0
+    },
+    {
+      "id": 9,
+      "name": "Nana",
+      "image": "../images/nana.png",
+      "count": 0
+    },
+    {
+      "id": 10,
+      "name": "Newman",
+      "image": "../images/newman.png",
+      "count": 0
+    }
+    
+  ]
+
+

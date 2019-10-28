@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Navbar from './components/Navbar';
-import Container from './components/Container';
+import Wrapper from './components/Wrapper';
 import Footer from './components/Footer';
 import Banner from './components/Banner';
 import Character from './components/Character';
@@ -33,25 +33,30 @@ class App extends Component {
     const state = this.state;
     return (
       <>
+      
       <Navbar 
         score = {state.score}
         highScore = {state.highScore}
         navMessage = {state.navMessage}
       />
       <Banner />
-      {/* <Container>
-      {this.state.images.map(character => (
-        <Character 
-        clickCount = {this.clickCount}
-        id = {character.id}
-        key = {character.id}
-        image = {character.image}
-        />
-      ))}
-      </Container> */}
-      <Character />
+      <Wrapper>
+        {this.state.images.map(image => (
+          <Character 
+            clickCount = {this.clickCount}
+            id = {image.id}
+            key = {image.id}
+            image = {image.image}
+          />
+        ))}
+        
+      
+      
+      
+      </Wrapper>
 
       <Footer />
+      
       
 
 
